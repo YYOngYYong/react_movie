@@ -1,3 +1,7 @@
+* {
+  text-decoration: none;
+}
+
 .movies .movie {
   background-color: white;
   margin-bottom: 70px;
@@ -16,10 +20,18 @@
   width: 100%;
   margin-right: 30px;
 }
-
 .movie .movie__title,
 .movie .movie__year {
   font-weight: 500;
+}
+.movie .movie__title {
+  color: black;
+  font-weight: 600;
+}
+
+.movie .movie__year {
+  color: gray;
+  font-weight: 300;
 }
 
 .movie .movie__genres {
@@ -28,10 +40,19 @@
   flex-wrap: wrap;
   padding: 0;
   margin: 5px 0px;
+  color: black;
 }
 
 .movie__genres li,
 .movie .movie__year {
   margin-right: 10px;
   font-size: 14px;
+}
+
+.movie__summary {
+  color: lightgray;
+}
+
+.movie__summary:hover {
+  color: black;
 }
