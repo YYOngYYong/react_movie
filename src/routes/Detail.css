@@ -1,3 +1,10 @@
-.test {
+.detail-page .movie-player {
+  margin: auto;
+  margin-top: 20px;
+}
+
+.detail-page {
+  text-align: left;
   color: white;
+  padding: 20px;
 }
