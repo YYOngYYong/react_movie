@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 
 class Detail extends React.Component {
   componentDidMount() {
-    //Detail 컴포넌트로 마운트되면 실행!
+    //Detail 컴포넌트로 마운트되면 실행
     const { location, history } = this.props;
 
     if (location.state === undefined) {
@@ -14,17 +14,21 @@ class Detail extends React.Component {
 
   render() {
     const { location } = this.props;
+    console.log(location);
     if (location.state) {
       return (
-        <div className="detail-page">
-          <span>{location.state.title}</span>
-          <ReactPlayer
-            className="movie-player"
-            url="https://www.youtube.com/watch?v=7C2z4GqqS5E"
-            controls
-            width="80%"
-          ></ReactPlayer>
-        </div>
+        <section className="detail__container">
+          <div className="detail-page">
+            <ReactPlayer
+              className="movie-player"
+              url="https://www.youtube.com/watch?v=7C2z4GqqS5E"
+              controls
+              width="80%"
+            ></ReactPlayer>
+            <h2 className="detail-page__title">{location.state.title}</h2>
+            <p className="detail-page__content">{location.state.summary}</p>
+          </div>
+        </section>
       );
     } else {
       return null;
