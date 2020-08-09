@@ -6,11 +6,16 @@
   display: flex;
   position: relative;
   margin: auto;
+  transition: transform 300ms ease;
 }
 
 .movies .movie img {
   max-width: 150px;
   width: 100%;
+}
+
+.movie:hover {
+  transform: scale(1.2);
 }
 
 .movie .movie__title {

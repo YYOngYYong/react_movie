@@ -13,9 +13,9 @@
 .movies {
   display: flex;
   flex-wrap: wrap;
-
   grid-gap: 100px;
   padding: 50px;
   width: 80%;
   padding-top: 70px;
 }
+ 
